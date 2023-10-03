@@ -612,7 +612,11 @@ func schemaOfField(member spec.Member) swaggerSchemaObject {
 			}
 		}
 		if strings.HasPrefix(member.Type.Name(), "map") {
-			fmt.Println("暂不支持map类型")
+			ret = swaggerSchemaObject{
+				schemaCore: schemaCore{
+					Type:  "string",
+				},
+			}
 		}
 	default:
 		ret = swaggerSchemaObject{
