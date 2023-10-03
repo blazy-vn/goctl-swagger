@@ -1,4 +1,4 @@
-module github.com/blazy-vn/goct-swaggers
+module github.com/blazy-vn/goctl-swagger
 
 go 1.16
 
